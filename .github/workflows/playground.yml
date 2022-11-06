@@ -1,0 +1,7 @@
+name: See if it prints GitHub object
+run-name: ${{ github.actor }} is messing around with GitHub Actions
+on: [push]
+jobs:
+  prints-github-object:
+    steps:
+      - run: echo "object ${{ github }}"
