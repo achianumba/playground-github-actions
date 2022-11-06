@@ -3,5 +3,6 @@ run-name: ${{ github.actor }} is messing around with GitHub Actions
 on: [push]
 jobs:
   prints-github-object:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "object ${{ github }}"
