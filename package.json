@@ -1,0 +1,23 @@
+{
+  "name": "actions-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achianumba/playground-github-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achianumba/playground-github-actions/issues"
+  },
+  "homepage": "https://github.com/achianumba/playground-github-actions#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}

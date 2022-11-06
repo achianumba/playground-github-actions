@@ -1,8 +1,13 @@
-name: See if it prints GitHub object
-run-name: ${{ github.actor }} is messing around with GitHub Actions
+name: Run unit tests
+run-name: ${{ github.actor }}'s unit test run
 on: [push]
 jobs:
-  prints-github-object:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "object ${{ github }}"
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm i
+      - run: npm run dev
